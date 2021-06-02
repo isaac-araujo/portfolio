@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* BRANCO rgba(248, 248, 255, 1) */
+/* PRETO  #0E1114 */
+/* AZUL #1874CD; */
+
 *{
   margin: 0;
   padding: 0;
@@ -166,7 +170,7 @@ button{
   background-color: black;
   background: url("../img/bannerClean.png") no-repeat center;
   height: 100vh;
-  color: white;
+  color: rgba(248, 248, 255, 1);
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
@@ -201,6 +205,48 @@ button{
   color: #1874CD;
 }
 
+.mid{
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.mouse{
+  width: 40px;
+  height: 65px;
+  border: 2.5px solid rgba(248, 248, 255, 1);
+  border-radius: 100px;
+
+}
+
+.mouse::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 30px;
+  background: rgba(248, 248, 255, 1);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+
+}
+
+@keyframes mouse {
+  from{
+    opacity: 1;
+    top: 15px;
+  }
+  to{
+    opacity: 0;
+    top: 48px;
+  }
+}
+
 /* SOBRE */
 
 section.sobre{
@@ -221,7 +267,7 @@ section.sobre{
   padding-bottom: 20px;
 }
 
-.sobre .titulo::before{
+/* .sobre .titulo::before{
   content: "";
   position: absolute;
   bottom: 0px;
@@ -231,9 +277,9 @@ section.sobre{
   background: #111;
   transform: translateX(-50%);
 
-}
+} */
 
-.sobre .titulo::after{
+/* .sobre .titulo::after{
   content: "who i am";
   position: absolute;
   bottom: -12px;
@@ -242,10 +288,10 @@ section.sobre{
   color: #0E1114;
   padding: 0 5px;
   background: #f8f8ff;
-  /* border-radius: 30%; */
+  /* border-radius: 30%;
   transform: translateX(-50%);
 
-}
+} */
 
 .sobre .cont_sobre{
   display: flex;
@@ -331,135 +377,105 @@ section.sobre{
 }
 
 /* SKILLS */
-
 .habilidades .titulo {
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    color: rgba(248, 248, 255, 1);
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  color: rgba(248, 248, 255, 1);
 
-  }
+}
 
-  section.habilidades{
-    padding: 80px 0 80px 0;
-    background-color: #0E1114;
-    color: rgba(248, 248, 255, 1);
+section.habilidades{
+  padding: 80px 0 80px 0;
+  background-color: #0E1114;
+  color: rgba(248, 248, 255, 1);
 
 
-  }
+}
 
-  .habilidades{
-    font-family: Poppins, sans-serif;
-  }
+.habilidades{
+  font-family: Poppins, sans-serif;
+}
 
-  .habilidades .cont_habilidades{
+.habilidades .cont_habilidades{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.habilidades .cont_habilidades .col{
+  width: 100%;
+  /* TAMANHO BARRA SKILLS */
+}
+
+.habilidades .cont_habilidades .bars{
+    margin-bottom: 20px;
+}
+
+.habilidades .cont_habilidades .infos{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
 
-  }
+.habilidades .cont_habilidades span{
+    font-weight: 500;
+    font-size: 20px;
+}
 
-  .habilidades .cont_habilidades .col{
-    width: 100%;
-    /* TAMANHO BARRA SKILLS */
-  }
+.habilidades .cont_habilidades .linha{
+  height: 8px;
+  width: 100%;
+  background-color: rgba(248, 248, 255, 1);
+  border-radius: 6px;
+  position: relative;}
 
-  .habilidades .cont_habilidades .bars{
-    margin-bottom: 20px;
-  }
+.habilidades .cont_habilidades .linha::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #1874CD;
+  border-radius: 6px;
+}
 
-    .habilidades .cont_habilidades .infos{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.habilidades .cont_habilidades .html::before{
+  width: 60%;
+}
+.habilidades .cont_habilidades .css::before{
+width: 40%;
+}
+.habilidades .cont_habilidades .js::before{
+  width: 20%;
+}
+.habilidades .cont_habilidades .c::before{
+  width: 70%;
+}
+.habilidades .cont_habilidades .ps::before{
+  width: 80%;
+}
 
-    .habilidades .cont_habilidades span{
-      font-weight: 500;
-      font-size: 20px;
-    }
-
-    .habilidades .cont_habilidades .linha{
-      height: 8px;
-      width: 100%;
-      background-color: rgba(248, 248, 255, 1);
-      border-radius: 6px;
-      position: relative;
-    }
-
-    .habilidades .cont_habilidades .linha::before{
-      content: "";
-      position: absolute;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: #1874CD;
-      border-radius: 6px;
-    }
-
-    .habilidades .cont_habilidades .html::before{
-      width: 60%;
-    }
-    .habilidades .cont_habilidades .css::before{
-      width: 40%;
-    }
-    .habilidades .cont_habilidades .js::before{
-      width: 20%;
-    }
-    .habilidades .cont_habilidades .c::before{
-      width: 70%;
-    }
-    .habilidades .cont_habilidades .ps::before{
-      width: 80%;
-    }
-
-    .habilidades .percent div {
-      position:relative;
-      margin:80px;
-      width:220px; height:220px;
-    }
-    canvas {
-        display: block;
-        position:absolute;
-        top:0;
-        left:0;
-    }
-    .habilidades .percent span {
-        color:rgba(248, 248, 255, 1);
-        display:block;
-        line-height:220px;
-        text-align:center;
-        width:220px;
-        font-family:sans-serif;
-        font-size:40px;
-        font-weight:100;
-        margin-left:5pxa;
-    }
-
-    .habilidades input {
-        width: 200px;
-    }
-
-
-
-    /* .habilidades div .chart{
-    position:relative;
-    margin:80px;
-    width:1px; height:1px;
-    }
-    .habilidades canvas {
-      display: block;
-      position:flex;
-      top:0;
-      left:0;
-    }
-    .habilidades .coldireita span {
-    color:#555;
+.habilidades .percent div {
+  position:relative;
+  margin:80px;
+  width:220px;
+  height:220px;
+}
+canvas {
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.habilidades .percent span {
+    color:rgba(248, 248, 255, 1);
     display:block;
     line-height:220px;
     text-align:center;
@@ -468,8 +484,150 @@ section.sobre{
     font-size:40px;
     font-weight:100;
     margin-left:5px;
-    }
+}
 
-    .habilidades input {
-        width: 200px;
-    } */
+.habilidades input {
+  width: 200px;
+}
+
+ .maps{
+  margin:0px;
+  padding: 0;
+}
+
+/* CONTATO */
+.contato .titulo {
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  color: #0E1114;
+
+}
+
+.contato .top{
+  font-size: 23px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  margin: 5px;
+}
+
+section.contato{
+  padding: 80px 0 80px 0;
+  background-color: rgba(248, 248, 255, 1);
+  color: #0E1114;
+}
+
+.contato .maps{
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.contato .cont_contato .col_esquerda{
+  width: calc(50% - 30px);
+  display: inline-block;
+  text-align: left;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 15px;
+  vertical-align: top;
+}
+
+.cont_contato .col_direita{
+  width: calc(50% - 30px);
+  left: 500px;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+  padding: 30px;
+  border-radius: 3px;
+}
+}
+
+@media (max-width: 600px) {
+
+  .col_esquerda,
+  .col_direita {
+    max-width: 100%;
+    display: flex;
+  }
+}
+
+.contato .col_direita form .campos{
+  display: flex;
+}
+
+.contato .col_direita form .campo,
+ .contato .col_direita form .campos .campo{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+.contato .col_direita form .nome{
+  margin-right: 10px;
+}
+
+.contato .col_direita form .email{
+  margin-left: 10px;
+}
+
+.contato .col_direita form .message{
+  height: 80px;
+
+}
+
+.contato .col_direita form .campo input,
+.contato .col_direita form .message textarea{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #1874CD;
+  border-radius: 8px;
+  outline: none;
+  padding: 0 20px;
+  font-size: 17px;
+  font-family: Poppins, sans-serif;
+  margin: 5px;
+  background: none;
+  color: #0E1114;
+}
+
+.contato .col_direita form .message textarea{
+  font-family: Poppins, sans-serif;
+  padding-top:  10px;
+  resize: none;
+  height: 100%;
+  width: 100%;
+
+}
+.contato .col_direita .botao{
+  height: 47px;
+  width: 170px;
+}
+
+.contato .col_direita .botao button{
+  height: 100%;
+  width: 100%;
+  /* margin-top:130px;  */
+  border-radius: 6px;
+  background: #1874CD;
+  color: rgba(248, 248, 255, 1);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  margin: 10px;
+  display: inline-block;
+  background: #1874CD;
+  border: 2px solid #1874CD;
+  transition: all 0.3s ease;
+}
+
+.contato .col_direita .botao button:hover{
+  color:#1874CD;
+  background: none;
+}
