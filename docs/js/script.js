@@ -15,8 +15,13 @@ $(document).ready(function(){
         $('.opcoes i').toggleClass("on")
       });
 
+      $('.sair').click(function(){
+        $('.barra_nav .menu').toggleClass("on")
+        $('.opcoes i').toggleClass("on")
+        });
+
       var typed = new Typed(".typing",{
-        strings: ["Student", "Program ", "Hacke", "Game", "Develop"],
+        strings: ["Student", "Program ", "Hack", "Game", "Develop"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -33,3 +38,9 @@ document.addEventListener( "click", function TrocaPalavras ( event ) {
         target.textContent = values[ ++placed % values.length ];
     }
 });
+
+// $(document).ready(function(){
+//   $(".sair").click(function(){
+//     $(".barra_nav .menu").addClass("menu");
+//   });
+// });
