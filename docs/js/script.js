@@ -39,8 +39,6 @@ document.addEventListener( "click", function TrocaPalavras ( event ) {
     }
 });
 
-// $(document).ready(function(){
-//   $(".sair").click(function(){
-//     $(".barra_nav .menu").addClass("menu");
-//   });
-// });
+document.querySelector('#myButton').addEventListener('click', function(event) {
+  event.preventDefault();
+});
