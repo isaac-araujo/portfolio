@@ -21,7 +21,7 @@ $(document).ready(function(){
         });
 
       var typed = new Typed(".typing",{
-        strings: ["Student", "Program ", "Hack", "Game", "Develop"],
+        strings: ["Student", "Program ", "Hacke", "Game", "Develop"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

@@ -8,10 +8,25 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b9eda93bd0.js"></script>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <script>
+  		function SubForm (){
+  			$.ajax({
+  				url:"https://api.apispreadsheets.com/data/13393/",
+  				type:"post",
+  				data:$("#myForm").serializeArray(),
+  				success: function(){
+  					alert("Form Data Submitted :)")
+  				},
+  				error: function(){
+  					alert("There was an error :(")
+  				}
+  			});
+  		}
+  	</script>
     <title>Isaac</title>
-
   </head>
   <body>
     <nav class="barra_nav" id="barra_nav">
@@ -144,14 +159,14 @@
 
         <div class="col_direita">
           <div class="top">Message me</div>
-          <form action="#" method="post">
+          <form id="myForm" action="#" method="post">
 
             <div class="campos">
               <div class="campo nome">
-                <input type="text" placeholder="Name" required>
+                <input name="nome" type="text" placeholder="Name" required>
               </div>
               <div class="campo ultimo">
-                <input name="nome" type="text" placeholder="Last Name" required>
+                <input name="nome_u" type="text" placeholder="Last Name" required>
               </div>
             </div>
 
@@ -165,7 +180,7 @@
               <textarea name="mensagem" rows="10" cols="30" placeholder="Message..." required></textarea>
             </div>
             <div class="botao">
-              <button type="submit" name="botao"><i class="far fa-envelope"></i>  Send</button>
+              <button type="submit" name="botao" onclick='SubForm()' ><i class="far fa-envelope"></i>  Send</button>
             </div>
           </form>
         </div>
