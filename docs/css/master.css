@@ -166,7 +166,6 @@ button{
 
   }
 
-
 }
 
 /* TELA INICIAL */
@@ -200,6 +199,7 @@ button{
   text-decoration: underline #1874CD;
   /* border-bottom: 5px inset #1874CD ; */
 }
+
 .home .cont_home .nome3{
   font-size: 40px;
   font-weight: 500;
@@ -227,8 +227,6 @@ button{
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-
-
 
 }
 
@@ -653,6 +651,17 @@ section.contato{
   }
   .contato .cont_contato .col_esquerda{
     width: 100%;
+  }
+}
+
+@keyframes mouse {
+  from{
+    opacity: 1;
+    top: 15px;
+  }
+  to{
+    opacity: 0;
+    top: 48px;
   }
 }
 
