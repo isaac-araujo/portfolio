@@ -3,6 +3,9 @@
 /* BRANCO rgba(248, 248, 255, 1) */
 /* PRETO  #0E1114 */
 /* AZUL #1874CD; */
+html{
+  scroll-behavior: smooth;
+}
 
 *{
   margin: 0;
@@ -247,6 +250,7 @@ button{
 
 .scroll h5{
   font-family: 'Ubuntu', sans-serif;
+  color: rgba(248, 248, 255, 1);
   font-weight: 400;
 }
 
@@ -654,15 +658,5 @@ section.contato{
   }
 }
 
-@keyframes mouse {
-  from{
-    opacity: 1;
-    top: 15px;
-  }
-  to{
-    opacity: 0;
-    top: 48px;
-  }
-}
 
 /* FIM? */
