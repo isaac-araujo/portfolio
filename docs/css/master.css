@@ -465,10 +465,10 @@ section.habilidades{
 }
 
 .habilidades .cont_habilidades .html::before{
-  width: 60%;
+  width: 70%;
 }
 .habilidades .cont_habilidades .css::before{
-width: 40%;
+width: 60%;
 }
 .habilidades .cont_habilidades .js::before{
   width: 20%;
