@@ -47,7 +47,7 @@ button{
   width: 100%;
   /* background: #1874CD; */
   /* #104E8B */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 30px 0;
   /* 0E1114
   141414 */
@@ -60,7 +60,7 @@ button{
 
 .barra_nav.colorida{
     padding: 20px 0;
-    background: rgba(248, 248, 255, 1) ;
+    background: rgba(248, 248, 255, 0.836) ;
     /* transition: 0.5s; */
 
 }
@@ -144,7 +144,7 @@ button{
     position: fixed;
     padding-top: 82px;
     text-align: center;
-    background: white;
+    background: rgba(248, 248, 255, 0.973);
     right: -100%;
     height: 100vh;
     width: 100%;
@@ -464,11 +464,17 @@ section.habilidades{
   border-radius: 6px;
 }
 
+.habilidades .cont_habilidades .git::before{
+  width: 100%;
+}
+.habilidades .cont_habilidades .python::before{
+  width: 90%;
+}
 .habilidades .cont_habilidades .html::before{
   width: 70%;
 }
 .habilidades .cont_habilidades .css::before{
-width: 60%;
+  width: 60%;
 }
 .habilidades .cont_habilidades .js::before{
   width: 20%;
