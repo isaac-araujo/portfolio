@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161616">
+  <link rel="stylesheet" href="./css_vrp/master.css">
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="shortcut icon" type="image/png" href="./img_vrp/logo.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js_vrp/jquery.event.move.js" type="text/javascript"></script>
+  <script src="./js_vrp/jquery.twentytwenty.js" type="text/javascript"></script>
+  <script src="./js_vrp/mask.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./css_vrp/twentytwenty.css" type="text/css" media="screen" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-417V9WKSB1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-417V9WKSB1');
+  </script>
+
+  <title>VRP - Maquete 3D e Renderização</title>
+</head>
+
+<body>
+  <div class="loaderscreen">
+    <span class="loader"><img src="./img_vrp/loadlogo.png" alt=""><span class="loader-inner"></span></span>
+  </div>
+  <div class="pagecontent">
+    <nav class="barra_nav" id="barra_nav">
+      <div class="max-larg">
+        <div class="logo">
+          <a href="#home"><img src="./img_vrp/logo1.png" alt="logoVRP"></a>
+        </div>
+        <ul id="menu" class="menu">
+          <li><a href="#home" class="sair">HOME</a></li>
+          <li><a href="#sobre" class="sair">SOBRE</a></li>
+          <li><a href="#servicos" class="sair">SERVIÇOS</a></li>
+          <li><a href="#comofunciona" class="sair">COMO FUNCIONA</a></li>
+          <li><a href="#contato" class="sair">CONTATO</a></li>
+        </ul>
+        <div class="opcoes">
+          <i class="ph-list"></i>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="home" id="home">
+      <div class="max-larg">
+
+        <div class="banner">
+          <video autoplay loop muted>
+            <source src="img_vrp/banner.mp4" type="video/mp4">
+          </video>
+          <div class="escurecer"></div>
+        </div>
+
+        <div class="scrolldown">
+          <div class="mid">
+            <div class="mouse"></div>
+            <div class="scroll">
+            </div>
+          </div>
+        </div>
+
+        <div class="botaocentral">
+          <div class="conteudo">
+            <h2>INVISTA NO SEU PROJETO</h2>
+            <div class="botaocont">
+              <a href="#contato" class="cta">
+                <span>SOLICITE UM ORÇAMENTO</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="max-larg">
+        <h2 class="titulo">SOBRE</h2>
+        <div class="cont_sobre">
+          <div class="col esquerda">
+            <img src="./img_vrp/sobre.png" alt="bed3dmodel">
+
+          </div>
+          <div class="col direita">
+            <div class="desc">
+              <p>A <strong>VRP</strong> é uma empresa especializada em <strong>Maquetes 3D</strong> para o mercado imobiliário. Geramos fotos e animações de
+                alta qualidade, com o propósito de otimizar o seu tempo e elevar a qualidade dos seus projetos.</p>
+              <h3 class="bold">Benefícios que um Render proporciona:</h3>
+            </div>
+            <div class="texto">
+              <div class="lista">
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>DIFERENCIA O SEU SERVIÇO</p>
+                </div>
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>ENRIQUECE O SEU CATÁLOGO DE VENDAS</p>
+                </div>
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>PODE SER O PONTO CRUCIAL NA HORA FECHAR UM NEGÓCIO</p>
+                </div>
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>AUMENTA SUA CONVERSÃO DE VENDAS</p>
+                </div>
+
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>DEMONSTRA O SEU CUIDADO COM O SONHO DO CLIENTE</p>
+                </div>
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>INCENTIVA A IMAGINAÇÃO</p>
+                </div>
+                <div class="beneficios"><i class="ph-check"></i>
+                  <p>ESCLARECE POSSÍVEIS DÚVIDAS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+      <div class="max-larg">
+        <h2 class="titulo">SERVIÇOS</h2>
+        <div class="cont_servicos">
+
+          <div class="conts">
+            <div class="containerserv 1">
+              <div class="card">
+                <div class="box">
+                  <img src="./img_vrp/modelagem.png" alt="Quarto não renderizado">
+                  <div class="content">
+                    <h3>Modelagem 3D</h3>
+                    <p>Aquilo era apenas uma planta baixa, se torna um incrível projeto modelado 3D.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerserv 2">
+              <div class="card">
+                <div class="box">
+                  <img src="./img_vrp/render.png" alt="Quarto Renderizado">
+                  <div class="content">
+                    <h3>Render (Interno/Externo)</h3>
+                    <p>Geramos imagens realistas de ambientes externos e internos, ajudando você a melhorar a
+                      apresentação
+                      de seus projetos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="conts">
+            <div class="containerserv 3">
+              <div class="card">
+                <div class="box">
+                  <video autoplay loop muted>
+                    <source src="img_vrp/animacao.mp4" alt="Animação Casa">
+
+                  </video>
+                  <div class="content">
+                    <h3>Animação</h3>
+                    <p>Com uma animação, conseguimos elevar ainda mais o nível da sua apresentação, simulando um passeio
+                      repleto de detalhes e efeitos sonoros em seu projeto.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerserv 4">
+              <div class="card">
+                <div class="box">
+                  <video autoplay loop muted>
+                    <source src="img_vrp/360.mp4" alt="Animação 360">
+
+                  </video>
+                  <div class="content">
+                    <h3>Foto 360º</h3>
+                    <p>Vá além, e supere todas as expectativas com a realidade virtual. Coloque seu cliente dentro do
+                      projeto com fotos 360º.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="subtitulo"> ANTES E DEPOIS</h2>
+        <div class="comparacoes">
+
+          <div id="container1" class="twentytwenty-container">
+            <img src="./img_vrp/sofaantes.png" alt="Quarto Antes" />
+            <img src="./img_vrp/sofadepois.png" alt="Quarto Depois" />
+          </div>
+
+          <div id="container2" class="twentytwenty-container">
+            <img src="./img_vrp/fachadaantes.png" alt="Fachada Antes" />
+            <img src="./img_vrp/fachadadepois.png" alt="Fachada Antes" />
+          </div>
+
+          <div id="container3" class="twentytwenty-container">
+            <img src="./img_vrp/quartoantes.png" alt="Sala Antes" />
+            <img src="./img_vrp/quartodepois.png" alt="Sala Depois" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="comofunciona" id="comofunciona">
+      <div class="max-larg">
+        <h2 class="titulo">COMO FUNCIONA</h2>
+        <div class="cont_cf">
+
+          <div class="containercf 1">
+            <div class="box">
+              <div class="content">
+                <h2><i class="ph-number-one"></i></h2>
+                <span>
+                  <h3><i class="ph-hand-pointing"></i></h3>
+                </span>
+              </div>
+            </div>
+            <h1>Selecione o Serviço</h1>
+            <p>Entraremos em contato para conversar sobre o serviço, e logo em seguida
+              enviaremos um orçamento.</p>
+          </div>
+
+
+          <div class="containercf 2">
+            <div class="box">
+              <div class="content">
+                <h2><i class="ph-number-two"></i></h2>
+                <span>
+                  <h3><i class="ph-file-arrow-up"></i></h3>
+                </span>
+              </div>
+            </div>
+            <h1>Envie o projeto</h1>
+            <p>Após a contratação do serviço, basta enviar os arquivos do projeto e especificar a maior quantidadede
+              detalhes possível.</p>
+          </div>
+
+          <div class="containercf 3">
+            <div class="box">
+              <div class="content">
+                <h2><i class="ph-number-three"></i></h2>
+                <span>
+                  <h3><i class="ph-check-circle"></i></h3>
+                </span>
+              </div>
+            </div>
+            <h1>Receba os arquivos</h1>
+            <p>Enviaremos arquivos simplificados das versões finais para você conferir e solicitar revisões se
+              necessário. Assim que aprovadas as versões simplificadas, enviaremos os arquivos finais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="max-larg">
+        <h2 class="titulo" id="contato">CONTATO</h2>
+        <div class="cont_contato">
+
+          <div class="col_esquerda">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14410.587475610439!2d-49.2892723!3d-25.450067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7aded18cb02bfba2!2sVRP%20-%20Maquete%203D%20e%20Renderiza%C3%A7%C3%A3o!5e0!3m2!1sen!2sbr!4v1632335107575!5m2!1sen!2sbr"
+                width="100%" height="600" style="border-radius: 9px;" allowfullscreen="" loading="eager"></iframe>
+            </div>
+          </div>
+
+          <div class="col_direita">
+            <div class="top">Entre em contato</div>
+            <form id="sheetdb-form" action="https://sheetdb.io/api/v1/p5uy36m2h4280" method="POST">
+
+              <div class="campos">
+                <div class="campo nome">
+                  <input name="data[Nome]" type="text" placeholder="Nome" autocomplete="name"
+                    oninvalid="this.setCustomValidity('Entre com um Nome válido')" oninput="setCustomValidity('')"
+                    required>
+                </div>
+              </div>
+
+              <div class="campo email">
+                <input name="data[Email]" type="email" placeholder="Email"
+                  oninvalid="this.setCustomValidity('Entre com um Email válido')" oninput="setCustomValidity('')"
+                  required>
+              </div>
+
+              <div class="campo telefone">
+                <input class="phone_with_ddd" name="data[Telefone]" type="tel" placeholder="Telefone"
+                  oninvalid="this.setCustomValidity('Entre com um Número válido')" oninput="setCustomValidity('')"
+                  required>
+              </div>
+
+              <div class="servico">
+                <h1>Qual o serviço desejado?</h1>
+                <ul class="checks">
+                  <li>
+                    <input type="checkbox" id="checkboxUm" name="data[Render]" value="✓"> <label
+                      for="checkboxUm">Render(Interior/Exterior)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkboxDois" name="data[Animacao]" value="✓"><label
+                      for="checkboxDois">Animação 3D</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkboxTres" name="data[Foto360]" value="✓"><label
+                      for="checkboxTres">Foto
+                      360°</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="checkboxQuatro" name="data[Modelagem]" value="✓"><label
+                      for="checkboxQuatro">Modelagem 3D</label>
+                  </li>
+                </ul>
+              </div>
+
+              <h1>Qual o prazo de entrega desejado?</h1>
+              <div class="select" tabindex="1">
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt1" value="5 dias" checked>
+                <label for="opt1" class="option">Até 5 dias úteis</label>
+
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt2" value="10 dias">
+                <label for="opt2" class="option">Até 10 dias úteis</label>
+
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt3" value="15 dias">
+                <label for="opt3" class="option">Até 15 dias úteis</label>
+
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt4" value="20 dias">
+                <label for="opt4" class="option">Até 20 dias úteis</label>
+
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt5" value="30 dias">
+                <label for="opt5" class="option">Até 30 dias úteis</label>
+
+                <input class="selectopt" name="data[Prazo]" type="radio" id="opt6" value="45 dias">
+                <label for="opt6" class="option">Até 45 dias úteis</label>
+              </div>
+
+              <div class="preferencia">
+                <h1>Por onde prefere ser contatado?</h1>
+                <div class="radios">
+                  <label>
+                    <input type="radio" class="option-input radio" name="data[Contato]" value="Whatsapp" id="whatsapp"
+                      checked />
+                    WhatsApp
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" name="data[Contato]" value="Email" id="email" />
+                    Email
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="botao">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="max-larg">
+        <div class="cima">
+          <div class="contatos">
+            <div class="contatos1">
+              <div class="maps">
+                <i class="ph-map-pin-light"></i>
+                <div>
+                  <h4>Avenida Iguaçu, 2947</h4>
+                  <h4>6º andar, Sala 63</h4>
+                  <h5>Água Verde, Curitiba - PR</h5>
+                </div>
+              </div>
+
+
+              <div>
+                <a class="email" target="_blank" href="mailto:vrpconstrucaoerenderizacao@gmail.com">
+                  <i class="ph-envelope-simple-light"></i>vrpconstrucaoerenderizacao@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contatos2">
+              <div>
+                <a class="whats" target="_blank" href="https://wa.me/554196824641">
+                  <i class="ph-whatsapp-logo-light"></i> +55 41 9682-4641
+                </a>
+              </div>
+
+              <div>
+                <a class="insta" target="_blank" href="https://www.instagram.com/vrp_render">
+                  <i class="ph-instagram-logo-light"></i> @vrp-render
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="logo">
+            <img src="./img_vrp/logorodape.png" alt="VRP Logo">
+
+          </div>
+
+        </div>
+        <div class="linha"></div>
+        <div class="baixo">
+          <span>Copyright © 2021. Todos os direitos Reservados.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js_vrp/script.js"></script>
+</body>
+
+</html>
