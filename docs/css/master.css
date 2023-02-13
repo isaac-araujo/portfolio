@@ -333,8 +333,8 @@ section.sobre{
   width: 55%;
 }
 
- .sobre .cont_sobre .direita .desc{
-  font-size: 26px;
+.sobre .cont_sobre .direita .desc{
+  font-size: 29px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -344,7 +344,8 @@ section.sobre{
 }
 
 .sobre .cont_sobre .direita p{
-  text-align:  justify;
+  text-align: justify;
+  font-size: 20px;
 }
 
 .sobre .cont_sobre .direita a{
@@ -469,6 +470,9 @@ section.habilidades{
 }
 .habilidades .cont_habilidades .python::before{
   width: 90%;
+}
+.habilidades .cont_habilidades .sql::before{
+  width: 80%;
 }
 .habilidades .cont_habilidades .html::before{
   width: 70%;
